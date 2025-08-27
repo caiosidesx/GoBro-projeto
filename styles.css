@@ -1,10 +1,82 @@
+/*VARIÁVEIS DE CORES*/
 :root {
     --color: #222;
     --bg-color: #000;
+    --font-color: #fff;
+    --font2-color: #00F5FF;
+    --font3-color: #0080FF;
+    --font4-color: #FF00FF;
+    --font5-color: #999;
 }
-
+/*CONFIGURAÇÕES PADRÃO INICIAIS*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+/*ESTILIZANDO O body*/
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--color);
+    overflow-x: hidden;
+    background-color: var(--bg-color);
+    padding-top: 100px;
+}
+/*ESTILIZANDO A CLASSE CONTAINER*/
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+/*ESTILIZANDO O header (CABEÇALHO)*/
+header {
+    background-color: var(--bg-color);
+    color: var(--font-color);
+    padding: 100px 20px 120px;
+    text-align: center;
+    position: relative;
+}
+/*ESTILIZANDO A LOGO*/
+.gradient-logo {
+    background: linear-gradient(90deg, var(--font2-color), var(--font3-color));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 4.5em;
+    font-weight: 900;
+    margin-bottom: 30px;
+    letter-spacing: -2px;
+    line-height: 1.1;
+}
+/*ESTILIZANDO A CLASSE SUBTITLE*/
+.subtitle {
+    font-size: 1.5em;
+    color: #999;
+    margin-bottom: 50px;
+    font-weight: 300;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*ESTILIZANDO LINK(BOTÃO) SAIBA MAIS*/
+.nav-button {
+    display: inline-block;
+    background: linear-gradient(90deg, var(--font2-color), var(--font3-color));
+    color: var(--bg-color);
+    padding: 20px 60PX;
+    text-decoration: none;
+    border-radius: 100px;
+    border: none;
+    font-size: 1.1em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+/*ADICIONANDO EFEITO HOVER NO LINK(BOTÃO)*/
+.nav-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 40px rgba(0, 245, 255, 0.5);
+}
+/*ESTILIZANDO A SECTION 1 - BENEFITS*/
