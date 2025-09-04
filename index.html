@@ -47,7 +47,7 @@
         </p>
       </article>
     </section>
-    <!--SECTION 2 -> FORMAS DE PAGAMENTO-->
+    <!--SECTION 2 -> FORMAS DE PAGAMENTO -->
     <section class="features container">
       <h2 class="payment">Formas de pagamento</h2>
       <span class="pill">Crédito</span>
@@ -59,15 +59,22 @@
     <section class="enrollment container">
       <div class="formulario">
         <h3 class="recruitment">Venha trabalhar conosco!</h3>
-        <form action="">
+        <form action="" id="meuFormulario">
           <div class="caixa-formulario">
-            <input type="text" placeholder="Digite seu Nome" required />
+            <input type="text" id="nome" placeholder="Digite seu Nome" />
+            <div class="error" id="errorName">
+              O nome deve ter pelo menos 8 caracteres
+            </div>
           </div>
           <div class="caixa-formulario">
-            <input type="email" placeholder="Email" required />
+            <input type="email" id="email" placeholder="Email" />
+            <div class="error" id="errorEmail">Digite um email válido</div>
           </div>
           <div class="caixa-formulario">
-            <input type="password" placeholder="Senha" required />
+            <input type="password" id="senha" placeholder="Senha" />
+            <div class="error" id="errorSenha">
+              A senha deve ter no mínimo 6 caracteres
+            </div>
           </div>
           <div class="caixa-lembrar-esqueci">
             <label><input type="checkbox" />Lembrar</label>

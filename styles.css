@@ -242,6 +242,13 @@ header {
     padding: 0 25px;
 }
 
+.error {
+    color: rgb(167, 23, 23);
+    font-size: 0.8em;
+    margin-top: 5px;
+    display: none;
+}
+
 .caixa-formulario input::placeholder {
     color: var(--font-color);
 }
