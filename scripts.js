@@ -21,3 +21,13 @@ const nome = document.querySelector("#name")
 const email = document.querySelector("#email")
 const senha = document.querySelector("#senha")
 const form = document.querySelector("form")
+
+form.addEventListener("submit", (e) => {
+    if(!nome.value || !email.value){
+        console.log("UM DOS DOIS ESTÁ VAZIO")
+    } else {
+       console.log("NENHUM DOS DOIS ESTÁ VAZIO")
+    }
+
+    e.preventDefault()
+})
