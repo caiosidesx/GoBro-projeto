@@ -17,3 +17,7 @@ function abrirWhatsapp() {
     window.open(url, "_blank")
 }
 /*PEGAR OS DADOS DO USUÁRIO (INSCRIÇÃO PARA VAGA NA LOJA) VALIDAÇÕES DE USUÁRIO*/ 
+const name = document.querySelector("#name")
+const email = document.querySelector("#email")
+const password = document.querySelector("#senha")
+const form = document.querySelector("form")
