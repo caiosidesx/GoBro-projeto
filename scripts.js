@@ -10,24 +10,39 @@
         - window.open(url, "_blank")
 */
 function abrirWhatsapp() {
-    let numero = 5579998524174
-    let mensagem = "Olá, quero saber mais sobre o atendimento de vocês!"
-    let url = "https://wa.me/" + numero + "?text=" + encodeURIComponent(mensagem)
+  let numero = 5579998524174;
+  let mensagem = "Olá, quero saber mais sobre o atendimento de vocês!";
+  let url = "https://wa.me/" + numero + "?text=" + encodeURIComponent(mensagem);
 
-    window.open(url, "_blank")
+  window.open(url, "_blank");
 }
-/*PEGAR OS DADOS DO USUÁRIO (INSCRIÇÃO PARA VAGA NA LOJA) VALIDAÇÕES DE USUÁRIO*/ 
-const nome = document.querySelector("#name")
-const email = document.querySelector("#email")
-const senha = document.querySelector("#senha")
-const form = document.querySelector("form")
+/*PEGAR OS DADOS DO USUÁRIO (INSCRIÇÃO PARA VAGA NA LOJA) VALIDAÇÕES DE USUÁRIO*/
+const nome = document.querySelector("#name");
+const email = document.querySelector("#email");
+const senha = document.querySelector("#senha");
+const form = document.querySelector("form");
 
 form.addEventListener("submit", (e) => {
-    if(!nome.value || !email.value){
-        console.log("UM DOS DOIS ESTÁ VAZIO")
-    } else {
-       console.log("NENHUM DOS DOIS ESTÁ VAZIO")
-    }
 
-    e.preventDefault()
-})
+    let enviarForm = true
+    
+  if (!nome.value) {
+    console.log("O NOME ESTÁ VAZIO");
+    enviarForm = false
+  }
+
+  if (!email.value) {
+    console.log("O EMAIL ESTÁ VAZIO");
+    enviarForm = false
+  }
+
+  if (!senha.value) {
+    console.log("A SENHA ESTÁ VAZIA");
+    enviarForm = false
+  }
+
+  if(!enviarForm){
+    e.preventDefault();
+  }
+
+});
