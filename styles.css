@@ -360,3 +360,9 @@ footer {
     }    
 
 }
+/*RESPONSIVIDADE - MEDIA QUERY - (IPHONE 12 PRO)*/
+@media(max-width: 390px){
+    .formulario {
+        margin-right: 50px;
+    }
+}

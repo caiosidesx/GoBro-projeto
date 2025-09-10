@@ -27,17 +27,14 @@ form.addEventListener("submit", (e) => {
     let enviarForm = true
     
   if (!nome.value) {
-    console.log("O NOME ESTÁ VAZIO");
     enviarForm = false
   }
 
   if (!email.value) {
-    console.log("O EMAIL ESTÁ VAZIO");
     enviarForm = false
   }
 
   if (!senha.value) {
-    console.log("A SENHA ESTÁ VAZIA");
     enviarForm = false
   }
 
