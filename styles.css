@@ -366,3 +366,10 @@ footer {
         margin-right: 50px;
     }
 }
+
+/*RESPONSIVIDADE - MEDIA QUERY - (SURFACE DUO)*/
+@media (max-width: 540px) {
+    button {
+        width: 250px;
+    }
+}
