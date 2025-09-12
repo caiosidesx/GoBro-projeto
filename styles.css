@@ -373,3 +373,27 @@ footer {
         width: 250px;
     }
 }
+
+/*RESPONSIVIDADE - MEDIA QUERY - (SAMSUNG GALAXY S8+)*/
+@media (max-width: 360px) {
+    .benefits {
+        right: 18px;
+    }
+
+    .benefit-card {
+        left: 3px;
+    }
+
+    .features {
+        padding: 50px;
+        margin-left: 2px;
+    }
+
+    .enrollment {
+        margin-left: 185px;
+    }
+    
+    .cta-section h2 {
+        margin-left: -10px;
+    }
+}
